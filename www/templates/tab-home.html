@@ -1,0 +1,24 @@
+<ion-view class="feeds-categories-view scroll-bg">
+    <ion-nav-title>
+        <span>GPS Security Solutions</span>
+    </ion-nav-title>
+
+    <ion-nav-buttons side="right">
+        <button class="button button-icon icon ion-ios-plus-empty" 
+            ng-click="newContent()"
+            ng-if="authUserData.isConnected"></button>
+    </ion-nav-buttons>
+
+    <ion-content ng-controller="ContentController">
+        <!-- Lista de categorías -->
+        <div class="row categories-list">
+            <div ng-repeat="content in contentList" class="col col-50" ng-click="showContent(content)">
+                <a class="feed-category">
+                    <img ng-src="{{ content.image }}" />
+                    <div class="category-bg"></div>
+                    <span class="category-title">{{ content.title }}</span>
+                </a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

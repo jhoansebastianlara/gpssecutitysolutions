@@ -1,0 +1,10 @@
+{
+    "FOO": "Estoy en españolete",
+    "tabs": {
+    	"home": "Inicio",
+    	"services": "Servicios",
+    	"platform": "Plataforma",
+    	"webpage": "Web",
+    	"support": "Soporte"
+    }
+}

@@ -1,0 +1,27 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top tabs-color-active-positive">
+    <!-- Home Tab -->
+    <ion-tab title="{{ 'tabs.home' | translate }}" icon-off="ion-home" icon-on="ion-home" href="#/tab/home">
+        <ion-nav-view name="tab-home"></ion-nav-view>
+    </ion-tab>
+    <!-- Services Tab -->
+    <ion-tab title="{{ 'tabs.services' | translate }}" icon-off="ion-ios-list-outline" icon-on="ion-ios-list" href="#/tab/services">
+        <ion-nav-view name="tab-services"></ion-nav-view>
+    </ion-tab>
+    <!-- Open Platform Tab -->
+    <ion-tab title="{{ 'tabs.platform' | translate }}" icon-off="ion-android-open" icon-on="ion-android-open" href="">
+        <ion-nav-view name="tab-platform"></ion-nav-view>
+    </ion-tab>
+    <!-- Open Web Tab -->
+    <ion-tab title="{{ 'tabs.webpage' | translate }}" icon-off="ion-ios-world-outline" icon-on="ion-ios-world" href="">
+        <ion-nav-view name="tab-webpage"></ion-nav-view>
+    </ion-tab>
+    <!-- Chats Tab -->
+    <ion-tab title="{{ 'tabs.support' | translate }}" icon-off="ion-ios-chatbubble-outline" icon-on="ion-ios-chatbubble" href="#/tab/support">
+        <ion-nav-view name="tab-support"></ion-nav-view>
+    </ion-tab>
+</ion-tabs>

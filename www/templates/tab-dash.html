@@ -1,0 +1,60 @@
+<ion-view view-title="Dashboard">
+    <ion-pane class="scroll-bg">
+        <ion-header-bar class="bar-positive">
+            <h1 class="title">myNetwork :  {{ 'FOO' | translate }}</h1>
+        </ion-header-bar>
+        <ion-header-bar class="bar-subheader bar-positive">
+            <h1 class="title">Subheader :: {{ 'FOO' | translate }}</h1>
+        </ion-header-bar>
+        <ion-content class="padding">
+            <ion-list>
+                <button class="button button-positive">button</button>
+                <button class="button button-block button-outline button-positive">
+                    Outlined Button
+                </button>
+                <button class="button button-block button-positive">Block Button</button>
+                <button class="button button-block button-clear  button-positive">Clear Button</button>
+                <ion-item href="#" class="item-positive">Item</ion-item>
+                <ion-toggle toggle-class="toggle-positive">Toggle</ion-toggle>
+                <div class="item range range-positive">
+                    <i class="icon ion-ios7-sunny-outline"></i>
+                    <input type="range" name="volume" min="0" max="100" value="33">
+                    <i class="icon ion-ios7-sunny"></i>
+                </div>
+                <a class="item" href="#">
+                    Badges
+                    <span class="badge badge-positive">0</span>
+                </a>
+            </ion-list>
+        </ion-content>
+        <ion-footer-bar class="bar-positive">
+            <h1 class="title">Footer</h1>
+        </ion-footer-bar>
+    </ion-pane>
+    <ion-content class="padding scroll-bg">
+        <div class="list card">
+            <div class="item item-divider">Recent Updates</div>
+            <div class="item item-body">
+                <div>
+                    There is a fire in <b>sector 3</b>
+                </div>
+            </div>
+        </div>
+        <div class="list card">
+            <div class="item item-divider">Health</div>
+            <div class="item item-body">
+                <div>
+                    You ate an apple today!
+                </div>
+            </div>
+        </div>
+        <div class="list card">
+            <div class="item item-divider">Upcoming</div>
+            <div class="item item-body">
+                <div>
+                    You have <b>29</b> meetings on your calendar tomorrow.
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
